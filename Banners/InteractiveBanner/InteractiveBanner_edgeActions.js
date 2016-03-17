@@ -22,88 +22,65 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 298, function(sym, e) {
          // stop the timeline at the current position
          this.stop();
-         
          $(this.lookupSelector("Text2")).html("0");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 619, function(sym, e) {
+         // stop the timeline at the current position
+         this.stop();
          $(this.lookupSelector("Text2")).html("08");
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "document", "keydown", function(sym, e) {
-         // e.which tells you which key. e.g. 32 = space
-         if (e.which == 83) {  //s
-         
-         	this.play("sun");
-         	sym.getComposition().getStage().getSymbol("planeRight").play("start");
-         
-         	//sym.$("Stage").css("background-color","#34437b");
-         	//$("body").css("background-color", "#34437b");
-         }
-         
-         
-         if (e.which == 77) {  //m
-         
-         	this.play("label 0800 HOLIDAY");
-         	sym.getComposition().getStage().getSymbol("planeLeft").play("start");
-         
-         	//sym.$("Stage").css("background-color","#000000");
-         	//$("body").css("background-color","#000000");
-         }
-         
-         
          if (e.which == 48) {  //0
          this.play("label 0");
          sym.getComposition().getStage().getSymbol("planeRight").play("start");
          }
          
+         if (e.which == 56) {  //08
+         this.play("label 08");
+         }
          
-         /*
-         0
+         if (e.which == 55) {  //087
+         this.play("label 087");
+         }
          
-         48
+         if (e.which == 53) {  //0875
+         this.play("label 0875");
+         }
          
-         1
+         if (e.which == 72) {  //0875 H
+         this.play("label 0875 H");
+         }
          
-         49
+         if (e.which == 79) {  //0875 HO
+         this.play("label 0875 HO");
+         }
          
-         2
+         if (e.which == 76) {  //0875 HOL
+         this.play("label 0875 HOL");
+         }
          
-         50
+         if (e.which == 73) {  //0875 HOLI
+         this.play("label 0875 HOLI");
+         }
          
-         3
+         if (e.which == 68) {  //0875 HOLID
+         this.play("label 0875 HOLID");
+         }
          
-         51
+         if (e.which == 65) {  //0875 HOLIDA
+         this.play("label 0875 HOLIDA");
+         }
          
-         4
-         
-         52
-         
-         5
-         
-         53
-         
-         6
-         
-         54
-         
-         7
-         
-         55
-         
-         8
-         
-         56
-         
-         9
-         
-         57
-         */
-         
+         if (e.which == 89) {  //0875 HOLIDAY
+         this.play("label 0875 HOLIDAY");
+         sym.getComposition().getStage().getSymbol("planeLeft").play("start");
+         }
 
       });
       //Edge binding end
@@ -125,55 +102,73 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("080");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("087");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1424, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1865, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 H");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 H");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2365, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HO");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HO");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2918, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HOL");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HOL");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3543, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HOLI");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HOLI");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4158, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HOLID");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HOLID");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4543, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HOLIDA");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HOLIDA");
 
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4900, function(sym, e) {
-         $(this.lookupSelector("Text2")).html("0800 HOLIDAY");
+         // stop the timeline at the current position
+         this.stop();
+         $(this.lookupSelector("Text2")).html("0875 HOLIDAY");
 
       });
       //Edge binding end
@@ -300,5 +295,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("treasure");
    //Edge symbol end:'treasure'
+
+   //=========================================================
+   
+   //Edge symbol: 'beforeKeydown'
+   (function(symbolName) {   
+   
+   })("beforeKeydown");
+   //Edge symbol end:'beforeKeydown'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-3049482");

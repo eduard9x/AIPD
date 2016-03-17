@@ -58,7 +58,7 @@
                             symbolName: 'Guy',
                             type: 'rect',
                             rect: ['0px', '103px', '336', '336', 'auto', 'auto'],
-                            opacity: '1'
+                            opacity: '0'
                         },
                         {
                             id: 'bag',
@@ -573,6 +573,206 @@
                             '0'
                         ],
                         [
+                            "eid182",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid181",
+                            "opacity",
+                            4500,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid183",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid178",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${tent}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid195",
+                            "opacity",
+                            1500,
+                            0,
+                            "linear",
+                            "${tent}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid177",
+                            "opacity",
+                            3500,
+                            0,
+                            "linear",
+                            "${tent}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid184",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${tent}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid112",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid107",
+                            "opacity",
+                            250,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid120",
+                            "opacity",
+                            576,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid127",
+                            "opacity",
+                            957,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid138",
+                            "opacity",
+                            1381,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid139",
+                            "opacity",
+                            1822,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid145",
+                            "opacity",
+                            2322,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid156",
+                            "opacity",
+                            2875,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid157",
+                            "opacity",
+                            3500,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid163",
+                            "opacity",
+                            4115,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid174",
+                            "opacity",
+                            4500,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid109",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid63",
+                            "left",
+                            0,
+                            0,
+                            "linear",
+                            "${planeLeft}",
+                            '559px',
+                            '559px'
+                        ],
+                        [
                             "eid113",
                             "opacity",
                             0,
@@ -689,206 +889,6 @@
                             0,
                             "linear",
                             "${bag}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid112",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid107",
-                            "opacity",
-                            250,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid120",
-                            "opacity",
-                            576,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid127",
-                            "opacity",
-                            957,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid138",
-                            "opacity",
-                            1381,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid139",
-                            "opacity",
-                            1822,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid145",
-                            "opacity",
-                            2322,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid156",
-                            "opacity",
-                            2875,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid157",
-                            "opacity",
-                            3500,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid163",
-                            "opacity",
-                            4115,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid174",
-                            "opacity",
-                            4500,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid109",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid178",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid195",
-                            "opacity",
-                            1500,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid177",
-                            "opacity",
-                            3500,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid184",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid63",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${planeLeft}",
-                            '559px',
-                            '559px'
-                        ],
-                        [
-                            "eid182",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${treasure}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid181",
-                            "opacity",
-                            4500,
-                            0,
-                            "linear",
-                            "${treasure}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid183",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${treasure}",
                             '1',
                             '0'
                         ],
@@ -1025,10 +1025,10 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['-1.2032']],
-                            id: 'AcbjRexdiCopy',
-                            type: 'image',
                             rect: ['674px', '-52px', '62px', '52px', 'auto', 'auto'],
+                            id: 'AcbjRexdiCopy',
+                            transform: [[], [], [], ['-1.2032']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/AcbjRexdi.png', '0px', '0px']
                         }
                     ],
@@ -1078,66 +1078,66 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['-379px', '137px', null, null, 'auto', 'auto'],
                             id: 'tent2',
                             symbolName: 'tent',
-                            rect: ['-379px', '137px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-559px', '47px', null, null, 'auto', 'auto'],
                             id: 'Guy2',
                             symbolName: 'Guy',
-                            rect: ['-559px', '47px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-392px', '290px', null, null, 'auto', 'auto'],
                             id: 'bag2',
                             symbolName: 'bag',
-                            rect: ['-392px', '290px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-266px', '189px', null, null, 'auto', 'auto'],
                             id: 'purse2',
                             symbolName: 'purse',
-                            rect: ['-266px', '189px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-136px', '281px', null, null, 'auto', 'auto'],
                             id: 'dog2',
                             symbolName: 'dog',
-                            rect: ['-136px', '281px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-156px', '340px', null, null, 'auto', 'auto'],
                             id: 'bone2',
                             symbolName: 'bone',
-                            rect: ['-156px', '340px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-224px', '261px', null, null, 'auto', 'auto'],
                             id: 'treasure2',
                             symbolName: 'treasure',
-                            rect: ['-224px', '261px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-269px', '52px', null, null, 'auto', 'auto'],
                             id: 'girl2',
                             symbolName: 'girl',
-                            rect: ['-269px', '52px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
-                            type: 'rect',
+                            rect: ['-332px', '314px', null, null, 'auto', 'auto'],
                             id: 'money2',
                             symbolName: 'money',
-                            rect: ['-332px', '314px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             opacity: '0'
                         },
                         {
@@ -1962,6 +1962,32 @@
                     style: {
                         '${symbolSelector}': {
                             rect: [null, null, '92px', '79px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "beforeKeydown": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '391px', '79px']
                         }
                     }
                 },
