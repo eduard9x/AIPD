@@ -36,50 +36,73 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "document", "keydown", function(sym, e) {
+         var myText;
+         
          if (e.which == 48) {  //0
          this.play("label 0");
          sym.getComposition().getStage().getSymbol("planeRight").play("start");
          }
          
          if (e.which == 56) {  //08
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0")
          this.play("label 08");
          }
          
          if (e.which == 55) {  //087
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="08")
          this.play("label 087");
          }
          
          if (e.which == 53) {  //0875
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="087")
          this.play("label 0875");
          }
          
          if (e.which == 72) {  //0875 H
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875")
          this.play("label 0875 H");
          }
          
          if (e.which == 79) {  //0875 HO
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 H")
          this.play("label 0875 HO");
          }
          
          if (e.which == 76) {  //0875 HOL
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 HO")
          this.play("label 0875 HOL");
          }
          
          if (e.which == 73) {  //0875 HOLI
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 HOL")
          this.play("label 0875 HOLI");
          }
          
          if (e.which == 68) {  //0875 HOLID
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 HOLI")
          this.play("label 0875 HOLID");
          }
          
          if (e.which == 65) {  //0875 HOLIDA
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 HOLID")
          this.play("label 0875 HOLIDA");
          }
          
          if (e.which == 89) {  //0875 HOLIDAY
+         myText = sym.$("Text2").html(); // You get text.
+         if(myText=="0875 HOLIDA"){
          this.play("label 0875 HOLIDAY");
          sym.getComposition().getStage().getSymbol("planeLeft").play("start");
+         }
          }
 
       });
