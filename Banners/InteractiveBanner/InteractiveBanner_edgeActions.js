@@ -108,21 +108,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
-         var title=$("title").text();
-         $("body").prepend("<div class='future'><h1>" + title + "</h1></div>");
-         
-         //Center the Stage
-         
-         //sym.$("Stage").css({"margin-left":"auto","margin-right":"auto"});
-         
-         
-         //$("body").css("background-color","#000000");
-         
-         
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
          // stop the timeline at the current position
@@ -326,5 +312,19 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("beforeKeydown");
    //Edge symbol end:'beforeKeydown'
+
+   //=========================================================
+   
+   //Edge symbol: 'clouds'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 20000, function(sym, e) {
+         this.play(0);
+
+      });
+      //Edge binding end
+
+   })("clouds");
+   //Edge symbol end:'clouds'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-3049482");

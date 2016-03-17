@@ -31,7 +31,8 @@
                             id: 'background',
                             symbolName: 'background',
                             type: 'rect',
-                            rect: ['0', '-80', '520', '520', 'auto', 'auto']
+                            rect: ['0', '-96px', '520', '520', 'auto', 'auto'],
+                            transform: [[],[],[],['1','1.06339']]
                         },
                         {
                             id: 'planeRight',
@@ -68,14 +69,6 @@
                             opacity: '0'
                         },
                         {
-                            id: 'Text',
-                            type: 'text',
-                            rect: ['17px', '15px', '441px', '41px', 'auto', 'auto'],
-                            opacity: '1',
-                            text: "<p style=\"margin: 0px;\">​Call 0875 HOLIDAY using the keyboard.</p>",
-                            font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(0,0,0,1)", "normal", "none", "", "break-word", "normal"]
-                        },
-                        {
                             id: 'dog',
                             symbolName: 'dog',
                             type: 'rect',
@@ -97,15 +90,6 @@
                             opacity: '0'
                         },
                         {
-                            id: 'Text2',
-                            type: 'text',
-                            rect: ['17px', '56', 'auto', 'auto', 'auto', 'auto'],
-                            text: "<p style=\"margin: 0px;\">​</p>",
-                            align: "left",
-                            font: ['Arial, Helvetica, sans-serif', [38, "px"], "rgba(233,64,64,1.00)", "400", "none", "normal", "break-word", "nowrap"],
-                            textStyle: ["", "", "", "", "none"]
-                        },
-                        {
                             id: 'bone',
                             symbolName: 'bone',
                             type: 'rect',
@@ -118,6 +102,30 @@
                             type: 'rect',
                             rect: ['227px', '370px', '114', '79', 'auto', 'auto'],
                             opacity: '0'
+                        },
+                        {
+                            id: 'clouds',
+                            symbolName: 'clouds',
+                            type: 'rect',
+                            rect: ['25', '31', '505', '82', 'auto', 'auto']
+                        },
+                        {
+                            id: 'Text',
+                            type: 'text',
+                            rect: ['17px', '15px', '441px', '41px', 'auto', 'auto'],
+                            opacity: '1',
+                            text: "<p style=\"margin: 0px;\">​Call 0875 HOLIDAY using the keyboard.</p>",
+                            font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(0,0,0,1)", "normal", "none", "", "break-word", "normal"]
+                        },
+                        {
+                            id: 'Text2',
+                            type: 'text',
+                            rect: ['17px', '56', 'auto', 'auto', 'auto', 'auto'],
+                            opacity: '1',
+                            text: "<p style=\"margin: 0px;\">​</p>",
+                            align: "left",
+                            font: ['Arial, Helvetica, sans-serif', [38, "px"], "rgba(233,64,64,1.00)", "400", "none", "normal", "break-word", "nowrap"],
+                            textStyle: ["", "", "", "", "none"]
                         },
                         {
                             id: 'planeLeft',
@@ -136,7 +144,7 @@
                     }
                 },
                 timeline: {
-                    duration: 5000,
+                    duration: 20000,
                     autoPlay: true,
                     labels: {
                         "label 0": 250,
@@ -152,6 +160,26 @@
                         "label 0875 HOLIDAY": 4857
                     },
                     data: [
+                        [
+                            "eid251",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${Text2}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid252",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${Text2}",
+                            '1',
+                            '0'
+                        ],
                         [
                             "eid115",
                             "opacity",
@@ -573,36 +601,6 @@
                             '0'
                         ],
                         [
-                            "eid182",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${treasure}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid181",
-                            "opacity",
-                            4500,
-                            0,
-                            "linear",
-                            "${treasure}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid183",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${treasure}",
-                            '1',
-                            '0'
-                        ],
-                        [
                             "eid178",
                             "opacity",
                             0,
@@ -641,136 +639,6 @@
                             "${tent}",
                             '1',
                             '0'
-                        ],
-                        [
-                            "eid112",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid107",
-                            "opacity",
-                            250,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid120",
-                            "opacity",
-                            576,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid127",
-                            "opacity",
-                            957,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid138",
-                            "opacity",
-                            1381,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid139",
-                            "opacity",
-                            1822,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid145",
-                            "opacity",
-                            2322,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid156",
-                            "opacity",
-                            2875,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid157",
-                            "opacity",
-                            3500,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid163",
-                            "opacity",
-                            4115,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid174",
-                            "opacity",
-                            4500,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid109",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${Guy}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid63",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${planeLeft}",
-                            '559px',
-                            '559px'
                         ],
                         [
                             "eid113",
@@ -893,6 +761,166 @@
                             '0'
                         ],
                         [
+                            "eid182",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid181",
+                            "opacity",
+                            4500,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid183",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${treasure}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid63",
+                            "left",
+                            0,
+                            0,
+                            "linear",
+                            "${planeLeft}",
+                            '559px',
+                            '559px'
+                        ],
+                        [
+                            "eid112",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid107",
+                            "opacity",
+                            250,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid120",
+                            "opacity",
+                            576,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid127",
+                            "opacity",
+                            957,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid138",
+                            "opacity",
+                            1381,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid139",
+                            "opacity",
+                            1822,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid145",
+                            "opacity",
+                            2322,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid156",
+                            "opacity",
+                            2875,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid157",
+                            "opacity",
+                            3500,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid163",
+                            "opacity",
+                            4115,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid174",
+                            "opacity",
+                            4500,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid109",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${Guy}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid118",
                             "opacity",
                             0,
@@ -1010,7 +1038,7 @@
                             "linear",
                             "${Text}",
                             '1',
-                            '0'
+                            '1'
                         ]
                     ]
                 }
@@ -1025,10 +1053,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['674px', '-52px', '62px', '52px', 'auto', 'auto'],
-                            id: 'AcbjRexdiCopy',
                             transform: [[], [], [], ['-1.2032']],
+                            id: 'AcbjRexdiCopy',
                             type: 'image',
+                            rect: ['674px', '-52px', '62px', '52px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/AcbjRexdi.png', '0px', '0px']
                         }
                     ],
@@ -1078,78 +1106,79 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-379px', '137px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tent2',
                             symbolName: 'tent',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-379px', '138px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-559px', '47px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Guy2',
                             symbolName: 'Guy',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-559px', '47px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-392px', '290px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'bag2',
                             symbolName: 'bag',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-392px', '290px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-266px', '189px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'purse2',
                             symbolName: 'purse',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-266px', '189px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-136px', '281px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'dog2',
                             symbolName: 'dog',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-136px', '281px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-156px', '340px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'bone2',
                             symbolName: 'bone',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-156px', '340px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-224px', '261px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'treasure2',
                             symbolName: 'treasure',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-224px', '261px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-269px', '52px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'girl2',
                             symbolName: 'girl',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-269px', '52px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['-332px', '314px', null, null, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'money2',
                             symbolName: 'money',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-332px', '314px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['0px', '-12px', '387px', '291px', 'auto', 'auto'],
                             id: 'AcbjRexdi',
                             type: 'image',
+                            rect: ['0px', '-12px', '387px', '291px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/AcbjRexdi.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '69px', '52px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '69px', '52px']
                         }
                     }
                 },
@@ -1421,36 +1450,6 @@
                             '0'
                         ],
                         [
-                            "eid196",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${money2}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid188",
-                            "opacity",
-                            500,
-                            0,
-                            "linear",
-                            "${money2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid193",
-                            "opacity",
-                            2476,
-                            0,
-                            "linear",
-                            "${money2}",
-                            '1',
-                            '0'
-                        ],
-                        [
                             "eid198",
                             "opacity",
                             0,
@@ -1481,6 +1480,46 @@
                             '0'
                         ],
                         [
+                            "eid196",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${money2}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid188",
+                            "opacity",
+                            500,
+                            0,
+                            "linear",
+                            "${money2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid193",
+                            "opacity",
+                            2476,
+                            0,
+                            "linear",
+                            "${money2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid83",
+                            "top",
+                            500,
+                            0,
+                            "linear",
+                            "${dog2}",
+                            '281px',
+                            '281px'
+                        ],
+                        [
                             "eid197",
                             "opacity",
                             0,
@@ -1507,46 +1546,6 @@
                             0,
                             "linear",
                             "${girl2}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid68",
-                            "left",
-                            500,
-                            0,
-                            "linear",
-                            "${bag2}",
-                            '-392px',
-                            '-392px'
-                        ],
-                        [
-                            "eid199",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${bone2}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid190",
-                            "opacity",
-                            500,
-                            0,
-                            "linear",
-                            "${bone2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid191",
-                            "opacity",
-                            2022,
-                            0,
-                            "linear",
-                            "${bone2}",
                             '1',
                             '0'
                         ],
@@ -1589,6 +1588,46 @@
                             "${AcbjRexdi}",
                             '-681px',
                             '-1020px'
+                        ],
+                        [
+                            "eid199",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${bone2}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid190",
+                            "opacity",
+                            500,
+                            0,
+                            "linear",
+                            "${bone2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid191",
+                            "opacity",
+                            2022,
+                            0,
+                            "linear",
+                            "${bone2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid68",
+                            "left",
+                            500,
+                            0,
+                            "linear",
+                            "${bag2}",
+                            '-392px',
+                            '-392px'
                         ],
                         [
                             "eid84",
@@ -1651,14 +1690,14 @@
                             '290px'
                         ],
                         [
-                            "eid83",
+                            "eid253",
                             "top",
                             500,
                             0,
                             "linear",
-                            "${dog2}",
-                            '281px',
-                            '281px'
+                            "${tent2}",
+                            '138px',
+                            '138px'
                         ],
                         [
                             "eid67",
@@ -1683,9 +1722,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '336px', '336px', 'auto', 'auto'],
-                            id: 'cartoon-business-man-free1',
                             type: 'image',
+                            id: 'cartoon-business-man-free1',
+                            rect: ['0px', '0px', '336px', '336px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cartoon-business-man-free1.png', '0px', '0px']
                         }
                     ],
@@ -1713,9 +1752,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '73px', '62px', 'auto', 'auto'],
-                            id: 'ncXxAyrri',
                             type: 'image',
+                            id: 'ncXxAyrri',
+                            rect: ['0px', '0px', '73px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/ncXxAyrri.png', '0px', '0px']
                         }
                     ],
@@ -1743,9 +1782,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '48px', '51px', 'auto', 'auto'],
-                            id: 'bag2',
                             type: 'image',
+                            id: 'bag2',
+                            rect: ['0px', '0px', '48px', '51px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/bag.png', '0px', '0px']
                         }
                     ],
@@ -1773,9 +1812,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '91px', '295px', 'auto', 'auto'],
-                            id: 'woman2',
                             type: 'image',
+                            id: 'woman2',
+                            rect: ['0px', '0px', '91px', '295px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/woman2.png', '0px', '0px']
                         }
                     ],
@@ -1803,9 +1842,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '69px', '79px', 'auto', 'auto'],
-                            id: 'dog-1',
                             type: 'image',
+                            id: 'dog-1',
+                            rect: ['0px', '0px', '69px', '79px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/dog-1.png', '0px', '0px']
                         }
                     ],
@@ -1833,9 +1872,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '520px', '520px', 'auto', 'auto'],
-                            id: '_2117',
                             type: 'image',
+                            id: '_2117',
+                            rect: ['0px', '0px', '520px', '520px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/2117.jpg', '0px', '0px']
                         }
                     ],
@@ -1863,9 +1902,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'pc78oagLi',
                             rect: ['0px', '0px', '39px', '20px', 'auto', 'auto'],
+                            id: 'pc78oagLi',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/pc78oagLi.png', '0px', '0px']
                         }
                     ],
@@ -1893,9 +1932,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'cartoon-tent-clipart-1jpg',
                             rect: ['0px', '0px', '322px', '153px', 'auto', 'auto'],
+                            id: 'cartoon-tent-clipart-1jpg',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/cartoon-tent-clipart-1.jpg.png', '0px', '0px']
                         }
                     ],
@@ -1923,9 +1962,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: '_8cEjrenRi',
                             rect: ['0px', '0px', '114px', '79px', 'auto', 'auto'],
+                            id: '_8cEjrenRi',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/8cEjrenRi.png', '0px', '0px']
                         }
                     ],
@@ -1953,9 +1992,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'scroll-simple-map-cartoon-template-compass-road',
                             rect: ['0px', '0px', '92px', '79px', 'auto', 'auto'],
+                            id: 'scroll-simple-map-cartoon-template-compass-road',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/scroll-simple-map-cartoon-template-compass-road.png', '0px', '0px']
                         }
                     ],
@@ -1986,8 +2025,7 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '391px', '79px']
+                            rect: [null, null, '391px', '79px']
                         }
                     }
                 },
@@ -1996,6 +2034,271 @@
                     autoPlay: true,
                     data: [
 
+                    ]
+                }
+            },
+            "clouds": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['140px', '6px', '101px', '62px', 'auto', 'auto'],
+                            id: 'cloud4',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud4.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['400px', '-44px', '101px', '62px', 'auto', 'auto'],
+                            id: 'cloud4Copy',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud4.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['180px', '-14px', '114px', '68px', 'auto', 'auto'],
+                            id: 'cloud2',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['44px', '-41px', '114px', '68px', 'auto', 'auto'],
+                            id: 'cloud2Copy',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['331px', '-16px', '114px', '68px', 'auto', 'auto'],
+                            id: 'cloud2Copy3',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['315px', '0px', '114px', '68px', 'auto', 'auto'],
+                            id: 'cloud2Copy4',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['291px', '-14px', '114px', '68px', 'auto', 'auto'],
+                            id: 'cloud2Copy5',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '505px', '82px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 20000,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid239",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy4}",
+                            '285px',
+                            '315px'
+                        ],
+                        [
+                            "eid240",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy4}",
+                            '315px',
+                            '285px'
+                        ],
+                        [
+                            "eid216",
+                            "top",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2}",
+                            '-14px',
+                            '0px'
+                        ],
+                        [
+                            "eid222",
+                            "top",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2}",
+                            '0px',
+                            '-14px'
+                        ],
+                        [
+                            "eid210",
+                            "top",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4}",
+                            '20px',
+                            '3px'
+                        ],
+                        [
+                            "eid223",
+                            "top",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4}",
+                            '3px',
+                            '20px'
+                        ],
+                        [
+                            "eid215",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2}",
+                            '128px',
+                            '180px'
+                        ],
+                        [
+                            "eid221",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2}",
+                            '180px',
+                            '128px'
+                        ],
+                        [
+                            "eid246",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy5}",
+                            '331px',
+                            '291px'
+                        ],
+                        [
+                            "eid247",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy5}",
+                            '291px',
+                            '331px'
+                        ],
+                        [
+                            "eid230",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4Copy}",
+                            '490px',
+                            '400px'
+                        ],
+                        [
+                            "eid231",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4Copy}",
+                            '400px',
+                            '490px'
+                        ],
+                        [
+                            "eid209",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4}",
+                            '0px',
+                            '158px'
+                        ],
+                        [
+                            "eid224",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud4}",
+                            '158px',
+                            '0px'
+                        ],
+                        [
+                            "eid225",
+                            "top",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy}",
+                            '-41px',
+                            '19px'
+                        ],
+                        [
+                            "eid226",
+                            "top",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy}",
+                            '19px',
+                            '-41px'
+                        ],
+                        [
+                            "eid227",
+                            "left",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy}",
+                            '44px',
+                            '24px'
+                        ],
+                        [
+                            "eid228",
+                            "left",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy}",
+                            '24px',
+                            '44px'
+                        ],
+                        [
+                            "eid243",
+                            "top",
+                            0,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy3}",
+                            '14px',
+                            '-16px'
+                        ],
+                        [
+                            "eid244",
+                            "top",
+                            10000,
+                            10000,
+                            "easeInOutSine",
+                            "${cloud2Copy3}",
+                            '-16px',
+                            '14px'
+                        ]
                     ]
                 }
             }
