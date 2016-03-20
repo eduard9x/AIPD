@@ -41,6 +41,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          if (e.which == 48) {  //0
          this.play("label 0");
          sym.getComposition().getStage().getSymbol("planeRight").play("start");
+         sym.getSymbol("Book").stop("stop");
          }
          
          if (e.which == 56) {  //08
@@ -182,6 +183,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
+         sym.getSymbol("Book").stop("stop");
+
+      });
+      //Edge binding end
+
+      
+
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${Stage}", "click", function(sym, e) {
+         // insert code for mouse click here
+         window.open("http://www.google.co.uk","_self");
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -218,6 +236,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3078, function(sym, e) {
+         sym.getComposition().getStage().getSymbol("Book").play("start");
 
       });
       //Edge binding end
@@ -326,5 +350,37 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    })("clouds");
    //Edge symbol end:'clouds'
+
+   //=========================================================
+   
+   //Edge symbol: 'Book'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
+         sym.play("start");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1750, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1875, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("Book");
+   //Edge symbol end:'Book'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-3049482");

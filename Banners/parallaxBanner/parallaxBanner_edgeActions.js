@@ -92,6 +92,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${Stage}", "click", function(sym, e) {
+         // insert code for mouse click here
+         window.open("http://www.google.co.uk","_self");
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

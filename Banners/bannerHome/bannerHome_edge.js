@@ -28,89 +28,37 @@
                 content: {
                     dom: [
                         {
-                            id: 'Rectangle3',
+                            id: 'background',
                             type: 'rect',
                             rect: ['0px', '0px', '1200px', '100px', 'auto', 'auto'],
                             fill: ["rgba(225,163,163,1.00)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
-                            id: 'Text',
-                            type: 'text',
-                            rect: ['561px', '47px', 'auto', 'auto', 'auto', 'auto'],
-                            opacity: '0',
-                            text: "<p style=\"margin: 0px;\">​Travel!</p>",
-                            align: "left",
-                            font: ['Arial, Helvetica, sans-serif', [34, "px"], "rgba(13,13,13,1)", "400", "none", "normal", "break-word", "nowrap"],
-                            textStyle: ["", "", "", "", "none"]
-                        },
-                        {
-                            id: 'sun_30',
+                            id: 'photo-1452800185063-6db5e12b8e2e',
                             type: 'image',
-                            rect: ['973px', '0px', '58px', '69px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"sun%2030.png",'0px','0px']
+                            rect: ['0px', '-210px', '1200px', '675px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"photo-1452800185063-6db5e12b8e2e.jpeg",'0px','0px']
                         },
                         {
-                            id: 'moon3',
-                            type: 'image',
-                            rect: ['1055px', '208px', '58px', '58px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"moon3.png",'0px','0px']
-                        },
-                        {
-                            id: 'Rectangle',
+                            id: 'road',
                             type: 'rect',
                             rect: ['0px', '100px', '1200px', '100px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,1.00)"],
                             stroke: [0,"rgba(0,0,0,1)","none"]
                         },
                         {
-                            id: 'Rectangle2',
+                            id: 'lanes',
+                            symbolName: 'Symbol_1',
                             type: 'rect',
-                            rect: ['42px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
+                            rect: ['42', '152', '1193', '8', 'auto', 'auto']
                         },
                         {
-                            id: 'Rectangle2Copy',
+                            id: 'link',
+                            symbolName: 'link',
                             type: 'rect',
-                            rect: ['222px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'Rectangle2Copy3',
-                            type: 'rect',
-                            rect: ['402px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'Rectangle2Copy2',
-                            type: 'rect',
-                            rect: ['582px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'Rectangle2Copy7',
-                            type: 'rect',
-                            rect: ['768px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'Rectangle2Copy6',
-                            type: 'rect',
-                            rect: ['948px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'Rectangle2Copy5',
-                            type: 'rect',
-                            rect: ['1128px', '152px', '107px', '8px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
+                            rect: ['466px', '23px', '268', '54', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'car2',
@@ -130,7 +78,7 @@
                             isStage: true,
                             rect: ['null', 'null', '1200px', '200px', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(133,164,255,1.00)"]
+                            fill: ["rgba(255,255,255,1.00)"]
                         }
                     }
                 },
@@ -139,44 +87,134 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid70",
+                            "eid212",
                             "top",
+                            0,
+                            5500,
+                            "linear",
+                            "${photo-1452800185063-6db5e12b8e2e}",
+                            '-210px',
+                            '-77px'
+                        ],
+                        [
+                            "eid214",
+                            "top",
+                            5500,
+                            2500,
+                            "linear",
+                            "${photo-1452800185063-6db5e12b8e2e}",
+                            '-77px',
+                            '-210px'
+                        ],
+                        [
+                            "eid100",
+                            "background-color",
+                            0,
                             1000,
-                            250,
-                            "linear",
-                            "${moon3}",
-                            '208px',
-                            '16px'
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(225,163,163,1)',
+                            'rgba(108,127,192,1.00)'
                         ],
                         [
-                            "eid71",
-                            "top",
+                            "eid102",
+                            "background-color",
+                            1000,
+                            1120,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(108,127,192,1)',
+                            'rgba(59,79,151,1.00)'
+                        ],
+                        [
+                            "eid104",
+                            "background-color",
+                            2120,
+                            710,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(59,79,151,1)',
+                            'rgba(103,123,195,1.00)'
+                        ],
+                        [
+                            "eid106",
+                            "background-color",
                             2830,
-                            250,
-                            "linear",
-                            "${moon3}",
-                            '16px',
-                            '208px'
+                            1630,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(103,123,195,1)',
+                            'rgba(227,216,160,1.00)'
                         ],
                         [
-                            "eid160",
+                            "eid108",
+                            "background-color",
+                            4460,
+                            1421,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(227,216,160,1)',
+                            'rgba(255,204,154,1.00)'
+                        ],
+                        [
+                            "eid110",
+                            "background-color",
+                            5881,
+                            1214,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(255,204,154,1)',
+                            'rgba(201,138,138,1.00)'
+                        ],
+                        [
+                            "eid112",
+                            "background-color",
+                            7095,
+                            905,
+                            "easeInOutCirc",
+                            "${background}",
+                            'rgba(201,138,138,1)',
+                            'rgba(225,163,163,1.00)'
+                        ],
+                        [
+                            "eid230",
                             "top",
                             2000,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '47px',
-                            '47px'
+                            2000,
+                            "easeInOutQuad",
+                            "${baloon}",
+                            '-138px',
+                            '-8px'
                         ],
                         [
-                            "eid164",
+                            "eid232",
                             "top",
-                            5977,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '47px',
-                            '47px'
+                            4000,
+                            2500,
+                            "easeInOutQuad",
+                            "${baloon}",
+                            '-8px',
+                            '-121px'
+                        ],
+                        [
+                            "eid231",
+                            "left",
+                            2000,
+                            2000,
+                            "easeInOutQuad",
+                            "${baloon}",
+                            '1107px',
+                            '613px'
+                        ],
+                        [
+                            "eid233",
+                            "left",
+                            4000,
+                            2500,
+                            "easeInOutQuad",
+                            "${baloon}",
+                            '613px',
+                            '264px'
                         ],
                         [
                             "eid44",
@@ -197,156 +235,6 @@
                             "${car2}",
                             '1218px',
                             '-355px'
-                        ],
-                        [
-                            "eid159",
-                            "left",
-                            2000,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '561px',
-                            '561px'
-                        ],
-                        [
-                            "eid168",
-                            "left",
-                            5977,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '561px',
-                            '561px'
-                        ],
-                        [
-                            "eid85",
-                            "top",
-                            4460,
-                            345,
-                            "easeOutQuad",
-                            "${sun_30}",
-                            '219px',
-                            '0px'
-                        ],
-                        [
-                            "eid84",
-                            "top",
-                            7095,
-                            345,
-                            "easeOutQuad",
-                            "${sun_30}",
-                            '0px',
-                            '219px'
-                        ],
-                        [
-                            "eid100",
-                            "background-color",
-                            0,
-                            1000,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(225,163,163,1)',
-                            'rgba(108,127,192,1.00)'
-                        ],
-                        [
-                            "eid102",
-                            "background-color",
-                            1000,
-                            1120,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(108,127,192,1)',
-                            'rgba(59,79,151,1.00)'
-                        ],
-                        [
-                            "eid104",
-                            "background-color",
-                            2120,
-                            710,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(59,79,151,1)',
-                            'rgba(103,123,195,1.00)'
-                        ],
-                        [
-                            "eid106",
-                            "background-color",
-                            2830,
-                            1630,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(103,123,195,1)',
-                            'rgba(227,216,160,1.00)'
-                        ],
-                        [
-                            "eid108",
-                            "background-color",
-                            4460,
-                            1421,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(227,216,160,1)',
-                            'rgba(255,204,154,1.00)'
-                        ],
-                        [
-                            "eid110",
-                            "background-color",
-                            5881,
-                            1214,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(255,204,154,1)',
-                            'rgba(201,138,138,1.00)'
-                        ],
-                        [
-                            "eid112",
-                            "background-color",
-                            7095,
-                            905,
-                            "easeInOutCirc",
-                            "${Rectangle3}",
-                            'rgba(201,138,138,1)',
-                            'rgba(225,163,163,1.00)'
-                        ],
-                        [
-                            "eid163",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid162",
-                            "opacity",
-                            1750,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid161",
-                            "opacity",
-                            2000,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid167",
-                            "opacity",
-                            5977,
-                            0,
-                            "easeInCirc",
-                            "${Text}",
-                            '0',
-                            '0'
                         ]
                     ]
                 }
@@ -361,10 +249,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '133px', '123px', 'auto', 'auto'],
-                            id: 'weelBack',
                             transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
+                            id: 'weelBack',
                             type: 'image',
+                            rect: ['0px', '0px', '133px', '123px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/weelBack.png', '0px', '0px']
                         }
                     ],
@@ -401,10 +289,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '125px', '124px', 'auto', 'auto'],
-                            id: 'weelFront',
                             transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
+                            id: 'weelFront',
                             type: 'image',
+                            rect: ['0px', '0px', '125px', '124px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/weelFront.png', '0px', '0px']
                         }
                     ],
@@ -441,24 +329,24 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0', '0', '325', '147', 'auto', 'auto'],
                             id: 'carsimb',
                             symbolName: 'carsimb',
-                            rect: ['0', '0', '325', '147', 'auto', 'auto']
+                            type: 'rect'
                         },
                         {
-                            rect: ['171px', '74px', '133', '123', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'weelback',
                             symbolName: 'weelback',
-                            type: 'rect',
-                            transform: [[], [], [], ['0.36906', '0.36906']]
+                            transform: [[], [], [], ['0.36906', '0.36906']],
+                            rect: ['171px', '74px', '133', '123', 'auto', 'auto']
                         },
                         {
-                            rect: ['9px', '79px', '125', '124', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'weelfront',
                             symbolName: 'weelfront',
-                            type: 'rect',
-                            transform: [[], [], [], ['0.36906', '0.36906']]
+                            transform: [[], [], [], ['0.36906', '0.36906']],
+                            rect: ['9px', '79px', '125', '124', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -482,14 +370,14 @@
                             '79px'
                         ],
                         [
-                            "eid47",
-                            "top",
+                            "eid18",
+                            "scaleX",
                             0,
                             0,
                             "linear",
                             "${weelback}",
-                            '74px',
-                            '74px'
+                            '0.36906',
+                            '0.36906'
                         ],
                         [
                             "eid14",
@@ -532,14 +420,14 @@
                             '9px'
                         ],
                         [
-                            "eid18",
-                            "scaleX",
+                            "eid47",
+                            "top",
                             0,
                             0,
                             "linear",
                             "${weelback}",
-                            '0.36906',
-                            '0.36906'
+                            '74px',
+                            '74px'
                         ]
                     ]
                 }
@@ -554,9 +442,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '-3px', '325px', '147px', 'auto', 'auto'],
-                            id: 'car',
                             type: 'image',
+                            id: 'car',
+                            rect: ['0px', '-3px', '325px', '147px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/car.png', '0px', '0px']
                         }
                     ],
@@ -613,15 +501,283 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'baloon_small',
                             rect: ['0px', '0px', '88px', '101px', 'auto', 'auto'],
+                            id: 'baloon_small',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/baloon%20small.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
                             rect: [null, null, '88px', '101px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "Symbol_1": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            id: 'second',
+                            symbolName: 'second',
+                            rect: ['1224px', '0', '1193', '8', 'auto', 'auto'],
+                            type: 'rect'
+                        },
+                        {
+                            id: 'first',
+                            symbolName: 'first',
+                            rect: ['-1253px', '0', '1193', '8', 'auto', 'auto'],
+                            type: 'rect'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1193px', '8px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 4000,
+                    autoPlay: true,
+                    labels: {
+                        "start": 0
+                    },
+                    data: [
+                        [
+                            "eid203",
+                            "left",
+                            0,
+                            2000,
+                            "linear",
+                            "${second}",
+                            '-1289px',
+                            '0px'
+                        ],
+                        [
+                            "eid220",
+                            "left",
+                            2005,
+                            1995,
+                            "linear",
+                            "${second}",
+                            '0px',
+                            '1224px'
+                        ],
+                        [
+                            "eid202",
+                            "left",
+                            0,
+                            2000,
+                            "linear",
+                            "${first}",
+                            '-40px',
+                            '1260px'
+                        ],
+                        [
+                            "eid227",
+                            "left",
+                            2005,
+                            1995,
+                            "linear",
+                            "${first}",
+                            '-1253px',
+                            '-40px'
+                        ]
+                    ]
+                }
+            },
+            "first": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'white_lineCopy',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy11',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy10',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy9',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy8',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy4',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1193px', '8px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "second": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'white_line',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy3',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy2',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy7',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy6',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
+                            id: 'Rectangle2Copy5',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1193px', '8px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "link": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '354px', '44px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [5, 'rgb(255, 255, 255)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(192,192,192,0)']
+                        },
+                        {
+                            rect: ['0px', '6px', '364px', '42px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            id: 'Text',
+                            text: '<p style=\"margin: 0px;\"><span style=\"font-size: 35px;\">Promotions on car hire</span></p>',
+                            align: 'center',
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '364px', '42px']
                         }
                     }
                 },

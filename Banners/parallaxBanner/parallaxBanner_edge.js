@@ -121,14 +121,24 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid66",
-                            "top",
-                            586,
+                            "eid166",
+                            "left",
                             0,
+                            4500,
                             "linear",
-                            "${drop3}",
-                            '492px',
-                            '492px'
+                            "${sun}",
+                            '227px',
+                            '236px'
+                        ],
+                        [
+                            "eid167",
+                            "left",
+                            4500,
+                            5500,
+                            "linear",
+                            "${sun}",
+                            '236px',
+                            '227px'
                         ],
                         [
                             "eid159",
@@ -271,44 +281,24 @@
                             '273px'
                         ],
                         [
-                            "eid133",
+                            "eid66",
                             "top",
+                            586,
                             0,
-                            5000,
                             "linear",
-                            "${rainCloud2}",
-                            '-142px',
-                            '-131px'
+                            "${drop3}",
+                            '492px',
+                            '492px'
                         ],
                         [
-                            "eid134",
-                            "top",
-                            5000,
-                            5000,
-                            "linear",
-                            "${rainCloud2}",
-                            '-131px',
-                            '-142px'
-                        ],
-                        [
-                            "eid78",
+                            "eid55",
                             "left",
+                            586,
                             0,
-                            4000,
                             "linear",
-                            "${cloudSym3}",
-                            '0px',
-                            '60px'
-                        ],
-                        [
-                            "eid79",
-                            "left",
-                            4000,
-                            6000,
-                            "linear",
-                            "${cloudSym3}",
-                            '60px',
-                            '0px'
+                            "${drop1}",
+                            '495px',
+                            '495px'
                         ],
                         [
                             "eid131",
@@ -331,24 +321,24 @@
                             '94px'
                         ],
                         [
-                            "eid166",
+                            "eid78",
                             "left",
                             0,
-                            4500,
+                            4000,
                             "linear",
-                            "${sun}",
-                            '227px',
-                            '236px'
+                            "${cloudSym3}",
+                            '0px',
+                            '60px'
                         ],
                         [
-                            "eid167",
+                            "eid79",
                             "left",
-                            4500,
-                            5500,
+                            4000,
+                            6000,
                             "linear",
-                            "${sun}",
-                            '236px',
-                            '227px'
+                            "${cloudSym3}",
+                            '60px',
+                            '0px'
                         ],
                         [
                             "eid64",
@@ -371,16 +361,6 @@
                             '0'
                         ],
                         [
-                            "eid55",
-                            "left",
-                            586,
-                            0,
-                            "linear",
-                            "${drop1}",
-                            '495px',
-                            '495px'
-                        ],
-                        [
                             "eid80",
                             "top",
                             0,
@@ -399,6 +379,26 @@
                             "${cloudSym3}",
                             '34px',
                             '24px'
+                        ],
+                        [
+                            "eid133",
+                            "top",
+                            0,
+                            5000,
+                            "linear",
+                            "${rainCloud2}",
+                            '-142px',
+                            '-131px'
+                        ],
+                        [
+                            "eid134",
+                            "top",
+                            5000,
+                            5000,
+                            "linear",
+                            "${rainCloud2}",
+                            '-131px',
+                            '-142px'
                         ]
                     ]
                 }
@@ -503,44 +503,44 @@
                 content: {
                     dom: [
                         {
+                            type: 'rect',
                             transform: [[], [], [], ['5.125', '5.125']],
-                            rect: ['196px', '291px', null, null, 'auto', 'auto'],
                             id: 'drop12',
                             symbolName: 'drop1',
                             opacity: '0',
-                            type: 'rect'
+                            rect: ['196px', '291px', null, null, 'auto', 'auto']
                         },
                         {
+                            type: 'rect',
                             transform: [[], [], [], ['3.88889', '3.88889']],
-                            rect: ['159px', '290px', null, null, 'auto', 'auto'],
                             id: 'drop22',
                             symbolName: 'drop2',
                             opacity: '0',
-                            type: 'rect'
+                            rect: ['159px', '290px', null, null, 'auto', 'auto']
                         },
                         {
+                            type: 'rect',
                             transform: [[], [], [], ['4.11111', '4.11111']],
-                            rect: ['177px', '291px', null, null, 'auto', 'auto'],
                             id: 'drop22Copy',
                             symbolName: 'drop2',
                             opacity: '0',
-                            type: 'rect'
+                            rect: ['177px', '291px', null, null, 'auto', 'auto']
                         },
                         {
+                            type: 'rect',
                             transform: [[], [], [], ['4.5', '4.5']],
-                            rect: ['117px', '332px', null, null, 'auto', 'auto'],
                             id: 'drop32',
                             symbolName: 'drop3',
                             opacity: '0',
-                            type: 'rect'
+                            rect: ['117px', '332px', null, null, 'auto', 'auto']
                         },
                         {
+                            type: 'rect',
                             transform: [[], [], [], ['4.25', '4.25']],
-                            rect: ['137px', '263px', null, null, 'auto', 'auto'],
                             id: 'drop32Copy2',
                             symbolName: 'drop3',
                             opacity: '0',
-                            type: 'rect'
+                            rect: ['137px', '263px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'image',
@@ -594,14 +594,14 @@
                             '633px'
                         ],
                         [
-                            "eid86",
-                            "top",
-                            3000,
-                            0,
+                            "eid100",
+                            "opacity",
+                            3045,
+                            45,
                             "linear",
-                            "${drop12}",
-                            '291px',
-                            '291px'
+                            "${drop32Copy2}",
+                            '0',
+                            '1'
                         ],
                         [
                             "eid99",
@@ -624,24 +624,24 @@
                             '633px'
                         ],
                         [
-                            "eid96",
-                            "opacity",
+                            "eid86",
+                            "top",
                             3000,
-                            45,
+                            0,
                             "linear",
-                            "${drop32}",
-                            '0',
-                            '1'
+                            "${drop12}",
+                            '291px',
+                            '291px'
                         ],
                         [
-                            "eid107",
-                            "top",
+                            "eid105",
+                            "left",
                             3250,
-                            500,
+                            0,
                             "linear",
                             "${drop22}",
-                            '290px',
-                            '623px'
+                            '159px',
+                            '159px'
                         ],
                         [
                             "eid93",
@@ -664,6 +664,16 @@
                             '623px'
                         ],
                         [
+                            "eid107",
+                            "top",
+                            3250,
+                            500,
+                            "linear",
+                            "${drop22}",
+                            '290px',
+                            '623px'
+                        ],
+                        [
                             "eid108",
                             "opacity",
                             3250,
@@ -672,16 +682,6 @@
                             "${drop22}",
                             '0',
                             '1'
-                        ],
-                        [
-                            "eid105",
-                            "left",
-                            3250,
-                            0,
-                            "linear",
-                            "${drop22}",
-                            '159px',
-                            '159px'
                         ],
                         [
                             "eid110",
@@ -694,12 +694,12 @@
                             '1'
                         ],
                         [
-                            "eid100",
+                            "eid96",
                             "opacity",
-                            3045,
+                            3000,
                             45,
                             "linear",
-                            "${drop32Copy2}",
+                            "${drop32}",
                             '0',
                             '1'
                         ]

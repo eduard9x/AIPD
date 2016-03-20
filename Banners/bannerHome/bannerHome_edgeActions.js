@@ -20,6 +20,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${link}", "click", function(sym, e) {
+         window.open("http://www.google.co.uk","_self");
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -82,5 +88,43 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("baloon");
    //Edge symbol end:'baloon'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_1'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4000, function(sym, e) {
+         sym.play("start");
+
+      });
+      //Edge binding end
+
+   })("Symbol_1");
+   //Edge symbol end:'Symbol_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'first'
+   (function(symbolName) {   
+   
+   })("first");
+   //Edge symbol end:'first'
+
+   //=========================================================
+   
+   //Edge symbol: 'second'
+   (function(symbolName) {   
+   
+   })("second");
+   //Edge symbol end:'second'
+
+   //=========================================================
+   
+   //Edge symbol: 'link'
+   (function(symbolName) {   
+   
+   })("link");
+   //Edge symbol end:'link'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-174030768");
