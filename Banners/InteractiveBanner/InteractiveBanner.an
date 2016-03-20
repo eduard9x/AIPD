@@ -2,7 +2,7 @@
 {
 
 	"expanded:images/scroll-simple-map-cartoon-template-compass-road.png":"nil",
-	"background-Default Timeline_playhead_ms":"0",
+	"Book-Default Timeline_playhead_ms":"0",
 	"expanded:images/AcbjRexdi.png":"nil",
 	"symbol_Guy":{
 		"element_${cartoon-business-man-free1}":{
@@ -10,7 +10,11 @@
 			"timelineColor3":"0x2a605c",
 			"invisible":"false",
 			"timelineColor":"0x00a096"}},
-	"expanded:images/cartoon-tent-clipart-1.jpg.png":"nil",
+	"symbol_purse":{
+		"element_${bag2}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"}},
 	"expanded:images/cloud2.png":"nil",
 	"plane1-Default Timeline_mark_ms":"-1",
 	"expanded:images/cartoon-family-clipart-1.jpg.png":"nil",
@@ -22,13 +26,9 @@
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
 			"timelineColor":"0x008dc8"}},
+	"StageZoomFactor":"100",
+	"expanded:images/bag.png":"nil",
 	"planeLeft-Default Timeline_mark_ms":"-1",
-	"plane1-Default Timeline_playhead_ms":"0",
-	"symbol_bag":{
-		"element_${ncXxAyrri}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa"}},
 	"pref__general__GenerateSmoothTransitions":"false",
 	"symbol_girl":{
 		"element_${woman2}":{
@@ -68,6 +68,16 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"true",
 			"timelineColor":"0xceaef4"},
+		"element_${tent2}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
+		"element_${bag2}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"true",
+			"timelineColor":"0x008dc8"},
 		"element_${AcbjRexdi}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
@@ -75,16 +85,6 @@
 			"timelineTreeOpened":"true",
 			"animationEnabled":"true",
 			"invisible":"false"},
-		"element_${bag2}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"animationEnabled":"true",
-			"timelineColor":"0x008dc8"},
-		"element_${tent2}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"animationEnabled":"true",
-			"timelineColor":"0xeedf79"},
 		"element_${treasure2}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
@@ -108,30 +108,31 @@
 			"animationEnabled":"true",
 			"timelineColor":"0xceaef4"}},
 	"expanded:images/dog-1.png":"nil",
+	"expanded:images/cartoon-tent-clipart-1.jpg.png":"nil",
+	"expanded:images/FreeVector-Calling-Man-Cartoon.jpg":"nil",
+	"stage-Default Timeline_mark_ms":"-1",
+	"nextElementColorIndex":"11",
+	"expanded:images/cartoon-business-man-free1.png":"nil",
+	"background-Default Timeline_playhead_ms":"0",
+	"symbol_plane1":{
+		"element_${AcbjRexdiCopy}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"}},
 	"symbol_bone":{
 		"element_${pc78oagLi}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
 			"timelineColor":"0xeedf79"}},
-	"expanded:images/FreeVector-Calling-Man-Cartoon.jpg":"nil",
-	"stage-Default Timeline_mark_ms":"-1",
-	"nextElementColorIndex":"11",
-	"expanded:images/cartoon-business-man-free1.png":"nil",
-	"pref__general__AutoKeyframeProperties":"false",
-	"expanded:images/woman2.png":"nil",
-	"expanded:images/8cEjrenRi.png":"nil",
 	"HTMLFileName":"InteractiveBanner.html",
-	"symbol_treasure":{
-		"element_${scroll-simple-map-cartoon-template-compass-road}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4"}},
+	"pref__general__AutoKeyframeProperties":"false",
 	"symbol_money":{
 		"element_${_8cEjrenRi}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
 			"timelineColor":"0x00a9fa"}},
-	"expanded:images/woman.png":"nil",
+	"viewStartY":"0",
 	"symbol_Symbol_1":{},
 	"ModelData":"{\
 \"stage\": {\
@@ -225,82 +226,17 @@
 }",
 	"expanded:images/1fa30e0624448edb5b17819fcd57c6be.jpg":"nil",
 	"Symbol_1-Default Timeline_playhead_ms":"0",
-	"symbol_background":{
-		"element_${_2117}":{
-			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
-			"invisible":"false",
-			"timelineColor":"0x2f73ad"}},
+	"pixelsPerMs":"1",
 	"beforeKeydown-Default Timeline_playhead_ms":"0",
-	"expanded:images/outline-cartoon-free-clothing-women-bag-handbag.png":"nil",
-	"expanded:images/cloud4.png":"nil",
 	"clouds-Default Timeline_mark_ms":"-1",
-	"symbol_clouds":{
-		"element_${cloud2Copy}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d",
-			"timelineTreeOpened":"true",
-			"animationEnabled":"true"},
-		"element_${cloud4}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
-		"element_${cloud2}":{
-			"timelineColor2":"0x5a558a",
-			"timelineColor3":"0x4a485e",
-			"timelineColor":"0x63599f",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
-		"element_${cloud2Copy5}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
-			"animationEnabled":"true",
-			"timelineColor":"0x00a096"},
-		"element_${cloud4Copy}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"timelineColor":"0xeedf79",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
-		"element_${cloud2Copy3}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"true",
-			"timelineColor":"0x50bd82"},
-		"element_${cloud2Copy4}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"animationEnabled":"true",
-			"timelineColor":"0x00bda4"},
-		"element_${cloud2Copy2}":{
-			"timelineColor2":"0x81aa62",
-			"animationEnabled":"false",
-			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767"}},
-	"symbol_tent":{
-		"element_${cartoon-tent-clipart-1jpg}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"timelineColor":"0x00bda4"}},
-	"expanded:images/pc78oagLi.png":"nil",
-	"viewStartMs":"1571.90625",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
-	"expanded:images/2117.jpg":"nil",
+	"TransitionIdCounter":"310",
 	"symbol_stage":{
-		"element_${RoundRect}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"animationEnabled":"false",
-			"timelineColor":"0x008dc8"},
-		"element_${purse}":{
+		"element_${Symbol_1}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
-			"timelineColor":"0xdb619d",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
+			"animationEnabled":"true",
+			"timelineColor":"0xdb619d"},
+		"dummyStageParentHeight":"440px",
 		"element_${_1fa30e0624448edb5b17819fcd57c6be}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
@@ -312,18 +248,18 @@
 			"timelineColor":"0x2f73ad",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
-			"invisible":"true"},
+			"invisible":"false"},
 		"element_${money}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
 			"timelineColor":"0x008dc8",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"},
-		"element_${bag}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"animationEnabled":"true",
-			"timelineColor":"0xeedf79"},
+		"element_${outline-cartoon-free-clothing-women-bag-handbag}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"animationEnabled":"false",
+			"timelineColor":"0xffd46d"},
 		"element_${ncXxAyrri}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
@@ -383,27 +319,31 @@
 			"timelineColor3":"0x5b6c4d",
 			"animationEnabled":"false",
 			"timelineColor":"0x91c767"},
-		"element_${outline-cartoon-free-clothing-women-bag-handbag}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"animationEnabled":"false",
-			"timelineColor":"0xffd46d"},
+		"element_${bag}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
 		"element_${cloud4}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
 			"animationEnabled":"false",
 			"timelineColor":"0xdb619d"},
-		"element_${dog}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"true",
-			"timelineColor":"0x50bd82"},
-		"element_${AcbjRexdiCopy}":{
+		"element_${scroll-simple-map-cartoon-template-compass-road}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"animationEnabled":"false",
+			"timelineColor":"0xdb619d"},
+		"element_${cartoon-business-man-free1}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"false",
+			"timelineColor":"0xceaef4"},
+		"element_${beforeKeydown}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"false",
 			"timelineColor":"0x00a096"},
-		"dummyStageParentHeight":"440px",
 		"element_${background}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
@@ -419,22 +359,23 @@
 			"timelineColor3":"0x7e4b52",
 			"animationEnabled":"false",
 			"timelineColor":"0xfb657a"},
+		"element_${purse}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"timelineColor":"0xdb619d",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
 		"element_${treasure}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
 			"animationEnabled":"true",
 			"timelineColor":"0xfb657a"},
-		"element_${cartoon-business-man-free1}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
+		"element_${RoundRect}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
 			"animationEnabled":"false",
-			"timelineColor":"0xceaef4"},
-		"element_${Symbol_1}":{
-			"timelineColor2":"0xba5b89",
-			"timelineColor3":"0x734a5f",
-			"animationEnabled":"true",
-			"timelineColor":"0xdb619d"},
-		"element_${beforeKeydown}":{
+			"timelineColor":"0x008dc8"},
+		"element_${AcbjRexdiCopy}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"false",
@@ -488,11 +429,11 @@
 			"timelineTreeOpened":"true",
 			"timelineColor":"0xeedf79"},
 		"defaultStageParentWidth":"520px",
-		"element_${scroll-simple-map-cartoon-template-compass-road}":{
-			"timelineColor2":"0xba5b89",
-			"timelineColor3":"0x734a5f",
-			"animationEnabled":"false",
-			"timelineColor":"0xdb619d"},
+		"element_${dog}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"},
 		"element_${AcbjRexdi}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -503,21 +444,76 @@
 			"timelineColor3":"0x2a6a61",
 			"animationEnabled":"false",
 			"timelineColor":"0x00bda4"}},
-	"TransitionIdCounter":"310",
-	"pixelsPerMs":"1",
-	"viewStartY":"0",
-	"symbol_plane1":{
-		"element_${AcbjRexdiCopy}":{
+	"symbol_clouds":{
+		"element_${cloud2Copy}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true"},
+		"element_${cloud4}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${cloud2Copy4}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"true",
+			"timelineColor":"0x00bda4"},
+		"element_${cloud2Copy5}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"true",
+			"timelineColor":"0x00a096"},
+		"element_${cloud4Copy}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${cloud2Copy3}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
 			"animationEnabled":"true",
-			"timelineColor":"0x50bd82"}},
-	"Book-Default Timeline_playhead_ms":"0",
-	"symbol_purse":{
-		"element_${bag2}":{
+			"timelineColor":"0x50bd82"},
+		"element_${cloud2}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"timelineColor":"0x63599f",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${cloud2Copy2}":{
 			"timelineColor2":"0x81aa62",
+			"animationEnabled":"false",
 			"timelineColor3":"0x5b6c4d",
 			"timelineColor":"0x91c767"}},
+	"symbol_tent":{
+		"element_${cartoon-tent-clipart-1jpg}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4"}},
+	"expanded:images/pc78oagLi.png":"nil",
+	"viewStartMs":"1571.90625",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"expanded:images/2117.jpg":"nil",
+	"symbol_background":{
+		"element_${_2117}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"invisible":"false",
+			"timelineColor":"0x2f73ad"}},
+	"expanded:images/cloud4.png":"nil",
+	"symbol_treasure":{
+		"element_${scroll-simple-map-cartoon-template-compass-road}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4"}},
+	"expanded:images/woman.png":"nil",
+	"expanded:images/outline-cartoon-free-clothing-women-bag-handbag.png":"nil",
+	"expanded:images/woman2.png":"nil",
+	"expanded:images/8cEjrenRi.png":"nil",
 	"usedBOM":"false",
 	"symbol_beforeKeydown":{
 		"element_${Rectangle}":{
@@ -531,6 +527,10 @@
 			"animationEnabled":"false",
 			"timelineColor":"0x00a9fa"}},
 	"stage-Default Timeline_playhead_ms":"4857",
-	"StageZoomFactor":"100",
-	"expanded:images/bag.png":"nil",
+	"symbol_bag":{
+		"element_${ncXxAyrri}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa"}},
+	"plane1-Default Timeline_playhead_ms":"0",
 	"expanded:images/ncXxAyrri.png":"nil"}

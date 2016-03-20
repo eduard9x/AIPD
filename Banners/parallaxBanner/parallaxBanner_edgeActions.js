@@ -154,4 +154,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("cloudSym3");
    //Edge symbol end:'cloudSym3'
 
+   //=========================================================
+   
+   //Edge symbol: 'link'
+   (function(symbolName) {   
+   
+   })("link");
+   //Edge symbol end:'link'
+
+   //=========================================================
+   
+   //Edge symbol: 'button'
+   (function(symbolName) {   
+   
+   })("button");
+   //Edge symbol end:'button'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-215168469");

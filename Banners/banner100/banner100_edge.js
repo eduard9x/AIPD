@@ -22,7 +22,7 @@
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
-                scaleToFit: "none",
+                scaleToFit: "both",
                 centerStage: "none",
                 resizeInstances: false,
                 content: {
@@ -158,44 +158,44 @@
                             '-300px'
                         ],
                         [
-                            "eid209",
+                            "eid206",
                             "left",
                             7000,
                             250,
                             "linear",
-                            "${second}",
-                            '300px',
-                            '0px'
+                            "${third}",
+                            '600px',
+                            '300px'
                         ],
                         [
-                            "eid224",
+                            "eid221",
                             "left",
                             12000,
                             250,
                             "linear",
-                            "${second}",
-                            '0px',
-                            '300px'
-                        ],
-                        [
-                            "eid281",
-                            "left",
-                            16000,
-                            250,
-                            "linear",
-                            "${second}",
+                            "${third}",
                             '300px',
                             '600px'
                         ],
                         [
-                            "eid299",
+                            "eid282",
+                            "left",
+                            16000,
+                            250,
+                            "linear",
+                            "${third}",
+                            '600px',
+                            '900px'
+                        ],
+                        [
+                            "eid300",
                             "left",
                             20000,
                             250,
                             "linear",
-                            "${second}",
-                            '600px',
-                            '300px'
+                            "${third}",
+                            '900px',
+                            '600px'
                         ],
                         [
                             "eid6",
@@ -328,44 +328,44 @@
                             '23px'
                         ],
                         [
-                            "eid206",
+                            "eid209",
                             "left",
                             7000,
                             250,
                             "linear",
-                            "${third}",
-                            '600px',
-                            '300px'
+                            "${second}",
+                            '300px',
+                            '0px'
                         ],
                         [
-                            "eid221",
+                            "eid224",
                             "left",
                             12000,
                             250,
                             "linear",
-                            "${third}",
-                            '300px',
-                            '600px'
+                            "${second}",
+                            '0px',
+                            '300px'
                         ],
                         [
-                            "eid282",
+                            "eid281",
                             "left",
                             16000,
                             250,
                             "linear",
-                            "${third}",
-                            '600px',
-                            '900px'
+                            "${second}",
+                            '300px',
+                            '600px'
                         ],
                         [
-                            "eid300",
+                            "eid299",
                             "left",
                             20000,
                             250,
                             "linear",
-                            "${third}",
-                            '900px',
-                            '600px'
+                            "${second}",
+                            '600px',
+                            '300px'
                         ]
                     ]
                 }
@@ -876,28 +876,27 @@
                 content: {
                     dom: [
                         {
-                            id: 'photo-1454579943364-13b2d508c27a',
                             type: 'image',
+                            id: 'photo-1454579943364-13b2d508c27a',
                             rect: ['0px', '0px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1454579943364-13b2d508c27a.jpeg', '0px', '0px']
                         },
                         {
-                            id: 'photo-1454923634634-bd1614719a7b',
                             type: 'image',
+                            id: 'photo-1454923634634-bd1614719a7b',
                             rect: ['0px', '-161px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1454923634634-bd1614719a7b.jpeg', '0px', '0px']
                         },
                         {
-                            id: 'photo-1454944917748-97e19cf16847',
                             type: 'image',
+                            id: 'photo-1454944917748-97e19cf16847',
                             rect: ['0px', '0px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1454944917748-97e19cf16847.jpeg', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '300px', '483px']
+                            rect: [null, null, '300px', '483px']
                         }
                     }
                 },
@@ -1021,28 +1020,27 @@
                 content: {
                     dom: [
                         {
-                            id: 'photo-1455035104105-24a7614a7ea4',
                             type: 'image',
+                            id: 'photo-1455035104105-24a7614a7ea4',
                             rect: ['0px', '0px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1455035104105-24a7614a7ea4.jpeg', '0px', '0px']
                         },
                         {
-                            id: 'photo-1456366387456-50950562b65e',
                             type: 'image',
+                            id: 'photo-1456366387456-50950562b65e',
                             rect: ['0px', '-323px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1456366387456-50950562b65e.jpeg', '0px', '0px']
                         },
                         {
-                            id: 'photo-1456693906521-44e96e49e85f',
                             type: 'image',
+                            id: 'photo-1456693906521-44e96e49e85f',
                             rect: ['0px', '-162px', '300px', '161px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/photo-1456693906521-44e96e49e85f.jpeg', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '300px', '161px']
+                            rect: [null, null, '300px', '161px']
                         }
                     }
                 },
@@ -1190,12 +1188,12 @@
                             fill: ['rgba(192,192,192,0)']
                         },
                         {
+                            rect: ['0px', '6px', '268px', '42px', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
-                            type: 'text',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\"><span style=\"font-size: 35px;\">Visit the world</span></p>',
                             align: 'center',
-                            rect: ['0px', '6px', '268px', '42px', 'auto', 'auto']
+                            type: 'text'
                         }
                     ],
                     style: {

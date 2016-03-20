@@ -22,7 +22,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
 
       Symbol.bindElementAction(compId, symbolName, "${link}", "click", function(sym, e) {
-         window.open("http://www.google.co.uk","_self");
+         window.open("https://www.airbnb.com","_self");
 
       });
       //Edge binding end

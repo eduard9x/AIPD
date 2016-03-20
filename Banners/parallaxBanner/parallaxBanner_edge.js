@@ -22,7 +22,7 @@
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
-                scaleToFit: "none",
+                scaleToFit: "both",
                 centerStage: "none",
                 resizeInstances: false,
                 content: {
@@ -105,6 +105,14 @@
                             align: "center",
                             font: ['Arial, Helvetica, sans-serif', [24, "px"], "rgba(0,0,0,1)", "400", "underline", "normal", "break-word", "normal"],
                             textStyle: ["", "", "", "", "none"]
+                        },
+                        {
+                            id: 'Rectangle',
+                            type: 'rect',
+                            rect: ['0px', '0px', '518px', '438px', 'auto', 'auto'],
+                            cursor: 'pointer',
+                            fill: ["rgba(192,192,192,0)"],
+                            stroke: [1,"rgb(255, 255, 255)","solid"]
                         }
                     ],
                     style: {
@@ -261,6 +269,16 @@
                             '228px'
                         ],
                         [
+                            "eid55",
+                            "left",
+                            586,
+                            0,
+                            "linear",
+                            "${drop1}",
+                            '495px',
+                            '495px'
+                        ],
+                        [
                             "eid156",
                             "left",
                             0,
@@ -291,14 +309,24 @@
                             '492px'
                         ],
                         [
-                            "eid55",
+                            "eid78",
                             "left",
-                            586,
                             0,
+                            4000,
                             "linear",
-                            "${drop1}",
-                            '495px',
-                            '495px'
+                            "${cloudSym3}",
+                            '0px',
+                            '60px'
+                        ],
+                        [
+                            "eid79",
+                            "left",
+                            4000,
+                            6000,
+                            "linear",
+                            "${cloudSym3}",
+                            '60px',
+                            '0px'
                         ],
                         [
                             "eid131",
@@ -319,26 +347,6 @@
                             "${rainCloud2}",
                             '105px',
                             '94px'
-                        ],
-                        [
-                            "eid78",
-                            "left",
-                            0,
-                            4000,
-                            "linear",
-                            "${cloudSym3}",
-                            '0px',
-                            '60px'
-                        ],
-                        [
-                            "eid79",
-                            "left",
-                            4000,
-                            6000,
-                            "linear",
-                            "${cloudSym3}",
-                            '60px',
-                            '0px'
                         ],
                         [
                             "eid64",
@@ -503,44 +511,44 @@
                 content: {
                     dom: [
                         {
+                            rect: ['196px', '291px', null, null, 'auto', 'auto'],
                             type: 'rect',
-                            transform: [[], [], [], ['5.125', '5.125']],
                             id: 'drop12',
                             symbolName: 'drop1',
                             opacity: '0',
-                            rect: ['196px', '291px', null, null, 'auto', 'auto']
+                            transform: [[], [], [], ['5.125', '5.125']]
                         },
                         {
+                            rect: ['159px', '290px', null, null, 'auto', 'auto'],
                             type: 'rect',
-                            transform: [[], [], [], ['3.88889', '3.88889']],
                             id: 'drop22',
                             symbolName: 'drop2',
                             opacity: '0',
-                            rect: ['159px', '290px', null, null, 'auto', 'auto']
+                            transform: [[], [], [], ['3.88889', '3.88889']]
                         },
                         {
+                            rect: ['177px', '291px', null, null, 'auto', 'auto'],
                             type: 'rect',
-                            transform: [[], [], [], ['4.11111', '4.11111']],
                             id: 'drop22Copy',
                             symbolName: 'drop2',
                             opacity: '0',
-                            rect: ['177px', '291px', null, null, 'auto', 'auto']
+                            transform: [[], [], [], ['4.11111', '4.11111']]
                         },
                         {
+                            rect: ['117px', '332px', null, null, 'auto', 'auto'],
                             type: 'rect',
-                            transform: [[], [], [], ['4.5', '4.5']],
                             id: 'drop32',
                             symbolName: 'drop3',
                             opacity: '0',
-                            rect: ['117px', '332px', null, null, 'auto', 'auto']
+                            transform: [[], [], [], ['4.5', '4.5']]
                         },
                         {
+                            rect: ['137px', '263px', null, null, 'auto', 'auto'],
                             type: 'rect',
-                            transform: [[], [], [], ['4.25', '4.25']],
                             id: 'drop32Copy2',
                             symbolName: 'drop3',
                             opacity: '0',
-                            rect: ['137px', '263px', null, null, 'auto', 'auto']
+                            transform: [[], [], [], ['4.25', '4.25']]
                         },
                         {
                             type: 'image',
@@ -594,12 +602,12 @@
                             '633px'
                         ],
                         [
-                            "eid100",
+                            "eid96",
                             "opacity",
-                            3045,
+                            3000,
                             45,
                             "linear",
-                            "${drop32Copy2}",
+                            "${drop32}",
                             '0',
                             '1'
                         ],
@@ -624,24 +632,24 @@
                             '633px'
                         ],
                         [
-                            "eid86",
-                            "top",
-                            3000,
-                            0,
+                            "eid100",
+                            "opacity",
+                            3045,
+                            45,
                             "linear",
-                            "${drop12}",
-                            '291px',
-                            '291px'
+                            "${drop32Copy2}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid105",
-                            "left",
+                            "eid108",
+                            "opacity",
                             3250,
-                            0,
+                            17,
                             "linear",
                             "${drop22}",
-                            '159px',
-                            '159px'
+                            '0',
+                            '1'
                         ],
                         [
                             "eid93",
@@ -664,6 +672,16 @@
                             '623px'
                         ],
                         [
+                            "eid105",
+                            "left",
+                            3250,
+                            0,
+                            "linear",
+                            "${drop22}",
+                            '159px',
+                            '159px'
+                        ],
+                        [
                             "eid107",
                             "top",
                             3250,
@@ -672,16 +690,6 @@
                             "${drop22}",
                             '290px',
                             '623px'
-                        ],
-                        [
-                            "eid108",
-                            "opacity",
-                            3250,
-                            17,
-                            "linear",
-                            "${drop22}",
-                            '0',
-                            '1'
                         ],
                         [
                             "eid110",
@@ -694,14 +702,14 @@
                             '1'
                         ],
                         [
-                            "eid96",
-                            "opacity",
+                            "eid86",
+                            "top",
                             3000,
-                            45,
+                            0,
                             "linear",
-                            "${drop32}",
-                            '0',
-                            '1'
+                            "${drop12}",
+                            '291px',
+                            '291px'
                         ]
                     ]
                 }
@@ -725,6 +733,88 @@
                     style: {
                         '${symbolSelector}': {
                             rect: [null, null, '252px', '196px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "link": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '175px', '25px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [5, 'rgb(255, 255, 255)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(192,192,192,0)']
+                        },
+                        {
+                            rect: ['0px', '6px', '185px', '35px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            id: 'Text',
+                            text: '<p style=\"margin: 0px;\"><span style=\"font-size: 20px;\">Check the weather</span></p>',
+                            align: 'center',
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '185px', '35px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "button": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '175px', '25px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [4, 'rgb(255, 255, 255)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(192,192,192,0)']
+                        },
+                        {
+                            rect: ['0px', '3px', '185px', '35px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            id: 'TextCopy',
+                            text: '<p style=\"margin: 0px;\"><span style=\"font-size: 20px;\">Check the weather</span></p>',
+                            align: 'center',
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '185px', '41px']
                         }
                     }
                 },

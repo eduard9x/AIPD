@@ -22,7 +22,7 @@
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
-                scaleToFit: "none",
+                scaleToFit: "both",
                 centerStage: "none",
                 resizeInstances: false,
                 content: {
@@ -86,26 +86,6 @@
                     duration: 8000,
                     autoPlay: true,
                     data: [
-                        [
-                            "eid212",
-                            "top",
-                            0,
-                            5500,
-                            "linear",
-                            "${photo-1452800185063-6db5e12b8e2e}",
-                            '-210px',
-                            '-77px'
-                        ],
-                        [
-                            "eid214",
-                            "top",
-                            5500,
-                            2500,
-                            "linear",
-                            "${photo-1452800185063-6db5e12b8e2e}",
-                            '-77px',
-                            '-210px'
-                        ],
                         [
                             "eid100",
                             "background-color",
@@ -177,6 +157,26 @@
                             'rgba(225,163,163,1.00)'
                         ],
                         [
+                            "eid44",
+                            "left",
+                            0,
+                            4000,
+                            "linear",
+                            "${car2}",
+                            '1218px',
+                            '-355px'
+                        ],
+                        [
+                            "eid86",
+                            "left",
+                            4000,
+                            4000,
+                            "linear",
+                            "${car2}",
+                            '1218px',
+                            '-355px'
+                        ],
+                        [
                             "eid230",
                             "top",
                             2000,
@@ -217,24 +217,24 @@
                             '264px'
                         ],
                         [
-                            "eid44",
-                            "left",
+                            "eid212",
+                            "top",
                             0,
-                            4000,
+                            5500,
                             "linear",
-                            "${car2}",
-                            '1218px',
-                            '-355px'
+                            "${photo-1452800185063-6db5e12b8e2e}",
+                            '-210px',
+                            '-77px'
                         ],
                         [
-                            "eid86",
-                            "left",
-                            4000,
-                            4000,
+                            "eid214",
+                            "top",
+                            5500,
+                            2500,
                             "linear",
-                            "${car2}",
-                            '1218px',
-                            '-355px'
+                            "${photo-1452800185063-6db5e12b8e2e}",
+                            '-77px',
+                            '-210px'
                         ]
                     ]
                 }
@@ -249,10 +249,10 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
-                            id: 'weelBack',
                             type: 'image',
+                            id: 'weelBack',
                             rect: ['0px', '0px', '133px', '123px', 'auto', 'auto'],
+                            transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
                             fill: ['rgba(0,0,0,0)', 'images/weelBack.png', '0px', '0px']
                         }
                     ],
@@ -289,10 +289,10 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
-                            id: 'weelFront',
                             type: 'image',
+                            id: 'weelFront',
                             rect: ['0px', '0px', '125px', '124px', 'auto', 'auto'],
+                            transform: [[], ['360'], [0, 0, 0], [1, 1, 1]],
                             fill: ['rgba(0,0,0,0)', 'images/weelFront.png', '0px', '0px']
                         }
                     ],
@@ -329,24 +329,24 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0', '0', '325', '147', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'carsimb',
                             symbolName: 'carsimb',
+                            rect: ['0', '0', '325', '147', 'auto', 'auto']
+                        },
+                        {
+                            transform: [[], [], [], ['0.36906', '0.36906']],
+                            id: 'weelback',
+                            symbolName: 'weelback',
+                            rect: ['171px', '74px', '133', '123', 'auto', 'auto'],
                             type: 'rect'
                         },
                         {
-                            type: 'rect',
-                            id: 'weelback',
-                            symbolName: 'weelback',
                             transform: [[], [], [], ['0.36906', '0.36906']],
-                            rect: ['171px', '74px', '133', '123', 'auto', 'auto']
-                        },
-                        {
-                            type: 'rect',
                             id: 'weelfront',
                             symbolName: 'weelfront',
-                            transform: [[], [], [], ['0.36906', '0.36906']],
-                            rect: ['9px', '79px', '125', '124', 'auto', 'auto']
+                            rect: ['9px', '79px', '125', '124', 'auto', 'auto'],
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -370,14 +370,14 @@
                             '79px'
                         ],
                         [
-                            "eid18",
-                            "scaleX",
+                            "eid47",
+                            "top",
                             0,
                             0,
                             "linear",
                             "${weelback}",
-                            '0.36906',
-                            '0.36906'
+                            '74px',
+                            '74px'
                         ],
                         [
                             "eid14",
@@ -420,14 +420,14 @@
                             '9px'
                         ],
                         [
-                            "eid47",
-                            "top",
+                            "eid18",
+                            "scaleX",
                             0,
                             0,
                             "linear",
                             "${weelback}",
-                            '74px',
-                            '74px'
+                            '0.36906',
+                            '0.36906'
                         ]
                     ]
                 }
@@ -442,9 +442,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'car',
                             rect: ['0px', '-3px', '325px', '147px', 'auto', 'auto'],
+                            id: 'car',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/car.png', '0px', '0px']
                         }
                     ],
@@ -501,9 +501,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '88px', '101px', 'auto', 'auto'],
-                            id: 'baloon_small',
                             type: 'image',
+                            id: 'baloon_small',
+                            rect: ['0px', '0px', '88px', '101px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/baloon%20small.png', '0px', '0px']
                         }
                     ],
@@ -531,22 +531,21 @@
                 content: {
                     dom: [
                         {
+                            rect: ['1224px', '0', '1193', '8', 'auto', 'auto'],
                             id: 'second',
                             symbolName: 'second',
-                            rect: ['1224px', '0', '1193', '8', 'auto', 'auto'],
                             type: 'rect'
                         },
                         {
+                            rect: ['-1253px', '0', '1193', '8', 'auto', 'auto'],
                             id: 'first',
                             symbolName: 'first',
-                            rect: ['-1253px', '0', '1193', '8', 'auto', 'auto'],
                             type: 'rect'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1193px', '8px']
+                            rect: [null, null, '1193px', '8px']
                         }
                     }
                 },
@@ -557,26 +556,6 @@
                         "start": 0
                     },
                     data: [
-                        [
-                            "eid203",
-                            "left",
-                            0,
-                            2000,
-                            "linear",
-                            "${second}",
-                            '-1289px',
-                            '0px'
-                        ],
-                        [
-                            "eid220",
-                            "left",
-                            2005,
-                            1995,
-                            "linear",
-                            "${second}",
-                            '0px',
-                            '1224px'
-                        ],
                         [
                             "eid202",
                             "left",
@@ -596,6 +575,26 @@
                             "${first}",
                             '-1253px',
                             '-40px'
+                        ],
+                        [
+                            "eid203",
+                            "left",
+                            0,
+                            2000,
+                            "linear",
+                            "${second}",
+                            '-1289px',
+                            '0px'
+                        ],
+                        [
+                            "eid220",
+                            "left",
+                            2005,
+                            1995,
+                            "linear",
+                            "${second}",
+                            '0px',
+                            '1224px'
                         ]
                     ]
                 }
@@ -610,59 +609,58 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'white_lineCopy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy11',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy10',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy9',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy8',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy4',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1193px', '8px']
+                            rect: [null, null, '1193px', '8px']
                         }
                     }
                 },
@@ -684,59 +682,58 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'white_line',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['180px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy3',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['360px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['540px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy7',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['726px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy6',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['906px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2Copy5',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['1086px', '0px', '107px', '8px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1193px', '8px']
+                            rect: [null, null, '1193px', '8px']
                         }
                     }
                 },
@@ -766,18 +763,17 @@
                             fill: ['rgba(192,192,192,0)']
                         },
                         {
-                            rect: ['0px', '6px', '364px', '42px', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            type: 'text',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\"><span style=\"font-size: 35px;\">Promotions on car hire</span></p>',
                             align: 'center',
-                            type: 'text'
+                            rect: ['0px', '6px', '364px', '42px', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '364px', '42px']
+                            rect: [null, null, '364px', '42px']
                         }
                     }
                 },

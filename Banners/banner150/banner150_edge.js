@@ -22,7 +22,7 @@
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
-                scaleToFit: "none",
+                scaleToFit: "both",
                 centerStage: "none",
                 resizeInstances: false,
                 content: {
@@ -94,6 +94,26 @@
                         "end": 20000
                     },
                     data: [
+                        [
+                            "eid38",
+                            "top",
+                            0,
+                            10000,
+                            "linear",
+                            "${_1}",
+                            '0px',
+                            '750px'
+                        ],
+                        [
+                            "eid56",
+                            "top",
+                            10000,
+                            10000,
+                            "linear",
+                            "${_1}",
+                            '750px',
+                            '0px'
+                        ],
                         [
                             "eid41",
                             "top",
@@ -213,26 +233,6 @@
                             "${_2}",
                             '600px',
                             '-150px'
-                        ],
-                        [
-                            "eid38",
-                            "top",
-                            0,
-                            10000,
-                            "linear",
-                            "${_1}",
-                            '0px',
-                            '750px'
-                        ],
-                        [
-                            "eid56",
-                            "top",
-                            10000,
-                            10000,
-                            "linear",
-                            "${_1}",
-                            '750px',
-                            '0px'
                         ]
                     ]
                 }
@@ -247,18 +247,17 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '298px', '46px', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(255,255,255,1)', 'normal', 'none', '', 'break-word', 'normal'],
+                            type: 'text',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\"><span style=\"font-size: 36px; text-decoration: underline;\">Explore the world</span></p>',
                             align: 'center',
-                            type: 'text'
+                            rect: ['0px', '0px', '298px', '46px', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '190px', '46px']
+                            rect: [null, null, '190px', '46px']
                         }
                     }
                 },
@@ -294,8 +293,7 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '345px', '79px']
+                            rect: [null, null, '345px', '79px']
                         }
                     }
                 },

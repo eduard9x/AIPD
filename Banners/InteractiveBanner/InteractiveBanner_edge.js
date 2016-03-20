@@ -22,7 +22,7 @@
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
-                scaleToFit: "none",
+                scaleToFit: "both",
                 centerStage: "none",
                 resizeInstances: false,
                 content: {
@@ -114,7 +114,7 @@
                             type: 'text',
                             rect: ['17px', '15px', '441px', '41px', 'auto', 'auto'],
                             opacity: '1',
-                            text: "<p style=\"margin: 0px;\">​Call 0875 HOLIDAY using the keyboard.</p>",
+                            text: "<p style=\"margin: 0px;\">​Type 0875 HOLIDAY using the keyboard.</p>",
                             font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(0,0,0,1)", "normal", "none", "", "break-word", "normal"]
                         },
                         {
@@ -132,6 +132,7 @@
                             symbolName: 'Book',
                             type: 'rect',
                             rect: ['110px', '298px', '322', '79', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '1'
                         },
                         {
@@ -139,6 +140,14 @@
                             symbolName: 'planeLeft',
                             type: 'rect',
                             rect: ['559px', '56', '69', '52', 'auto', 'auto']
+                        },
+                        {
+                            id: 'RoundRect',
+                            type: 'rect',
+                            rect: ['0px', '0px', '518px', '438px', 'auto', 'auto'],
+                            cursor: 'pointer',
+                            fill: ["rgba(255,255,255,0.00)"],
+                            stroke: [1,"rgba(255,255,255,1.00)","solid"]
                         }
                     ],
                     style: {
@@ -318,14 +327,34 @@
                             '0'
                         ],
                         [
-                            "eid294",
+                            "eid180",
                             "opacity",
                             0,
                             0,
                             "linear",
-                            "${Book}",
-                            '1',
+                            "${money}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid179",
+                            "opacity",
+                            4115,
+                            0,
+                            "linear",
+                            "${money}",
+                            '0',
                             '1'
+                        ],
+                        [
+                            "eid186",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${money}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid114",
@@ -598,32 +627,52 @@
                             '0'
                         ],
                         [
-                            "eid180",
+                            "eid294",
                             "opacity",
                             0,
                             0,
                             "linear",
-                            "${money}",
+                            "${Book}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid178",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${tent}",
                             '0',
                             '0'
                         ],
                         [
-                            "eid179",
+                            "eid195",
                             "opacity",
-                            4115,
+                            1500,
                             0,
                             "linear",
-                            "${money}",
+                            "${tent}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid177",
+                            "opacity",
+                            3500,
+                            0,
+                            "linear",
+                            "${tent}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid186",
+                            "eid184",
                             "opacity",
                             4857,
                             0,
                             "linear",
-                            "${money}",
+                            "${tent}",
                             '1',
                             '0'
                         ],
@@ -666,166 +715,6 @@
                             "${planeLeft}",
                             '559px',
                             '559px'
-                        ],
-                        [
-                            "eid113",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid108",
-                            "opacity",
-                            250,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid121",
-                            "opacity",
-                            576,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid128",
-                            "opacity",
-                            957,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid137",
-                            "opacity",
-                            1381,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid140",
-                            "opacity",
-                            1822,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid146",
-                            "opacity",
-                            2322,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid155",
-                            "opacity",
-                            2875,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid158",
-                            "opacity",
-                            3500,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid164",
-                            "opacity",
-                            4115,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid173",
-                            "opacity",
-                            4500,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '1'
-                        ],
-                        [
-                            "eid110",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${bag}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid178",
-                            "opacity",
-                            0,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid195",
-                            "opacity",
-                            1500,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid177",
-                            "opacity",
-                            3500,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid184",
-                            "opacity",
-                            4857,
-                            0,
-                            "linear",
-                            "${tent}",
-                            '1',
-                            '0'
                         ],
                         [
                             "eid112",
@@ -944,6 +833,126 @@
                             0,
                             "linear",
                             "${Guy}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid113",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid108",
+                            "opacity",
+                            250,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid121",
+                            "opacity",
+                            576,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid128",
+                            "opacity",
+                            957,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid137",
+                            "opacity",
+                            1381,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid140",
+                            "opacity",
+                            1822,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid146",
+                            "opacity",
+                            2322,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid155",
+                            "opacity",
+                            2875,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid158",
+                            "opacity",
+                            3500,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid164",
+                            "opacity",
+                            4115,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid173",
+                            "opacity",
+                            4500,
+                            0,
+                            "linear",
+                            "${bag}",
+                            '1',
+                            '1'
+                        ],
+                        [
+                            "eid110",
+                            "opacity",
+                            4857,
+                            0,
+                            "linear",
+                            "${bag}",
                             '1',
                             '0'
                         ],
@@ -1136,69 +1145,69 @@
                             type: 'rect',
                             id: 'tent2',
                             symbolName: 'tent',
-                            rect: ['-379px', '138px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-379px', '138px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'Guy2',
                             symbolName: 'Guy',
-                            rect: ['-559px', '47px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-559px', '47px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'bag2',
                             symbolName: 'bag',
-                            rect: ['-392px', '290px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-392px', '290px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'purse2',
                             symbolName: 'purse',
-                            rect: ['-266px', '189px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-266px', '189px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'dog2',
                             symbolName: 'dog',
-                            rect: ['-136px', '281px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-136px', '281px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'bone2',
                             symbolName: 'bone',
-                            rect: ['-156px', '340px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-156px', '340px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'treasure2',
                             symbolName: 'treasure',
-                            rect: ['-224px', '261px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-224px', '261px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'girl2',
                             symbolName: 'girl',
-                            rect: ['-269px', '52px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-269px', '52px', null, null, 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'money2',
                             symbolName: 'money',
-                            rect: ['-332px', '314px', null, null, 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '0',
+                            rect: ['-332px', '314px', null, null, 'auto', 'auto']
                         },
                         {
-                            rect: ['0px', '-12px', '387px', '291px', 'auto', 'auto'],
-                            id: 'AcbjRexdi',
                             type: 'image',
+                            id: 'AcbjRexdi',
+                            rect: ['0px', '-12px', '387px', '291px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/AcbjRexdi.png', '0px', '0px']
                         }
                     ],
@@ -1576,14 +1585,14 @@
                             '0'
                         ],
                         [
-                            "eid68",
+                            "eid84",
                             "left",
                             500,
                             0,
                             "linear",
-                            "${bag2}",
-                            '-392px',
-                            '-392px'
+                            "${dog2}",
+                            '-136px',
+                            '-136px'
                         ],
                         [
                             "eid199",
@@ -1656,14 +1665,14 @@
                             '-1020px'
                         ],
                         [
-                            "eid84",
+                            "eid68",
                             "left",
                             500,
                             0,
                             "linear",
-                            "${dog2}",
-                            '-136px',
-                            '-136px'
+                            "${bag2}",
+                            '-392px',
+                            '-392px'
                         ],
                         [
                             "eid45",
@@ -1748,9 +1757,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'cartoon-business-man-free1',
                             rect: ['0px', '0px', '336px', '336px', 'auto', 'auto'],
+                            id: 'cartoon-business-man-free1',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/cartoon-business-man-free1.png', '0px', '0px']
                         }
                     ],
@@ -1778,9 +1787,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'ncXxAyrri',
                             rect: ['0px', '0px', '73px', '62px', 'auto', 'auto'],
+                            id: 'ncXxAyrri',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/ncXxAyrri.png', '0px', '0px']
                         }
                     ],
@@ -1808,9 +1817,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'bag2',
                             rect: ['0px', '0px', '48px', '51px', 'auto', 'auto'],
+                            id: 'bag2',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/bag.png', '0px', '0px']
                         }
                     ],
@@ -1838,9 +1847,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'woman2',
                             rect: ['0px', '0px', '91px', '295px', 'auto', 'auto'],
+                            id: 'woman2',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/woman2.png', '0px', '0px']
                         }
                     ],
@@ -1868,9 +1877,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'dog-1',
                             rect: ['0px', '0px', '69px', '79px', 'auto', 'auto'],
+                            id: 'dog-1',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/dog-1.png', '0px', '0px']
                         }
                     ],
@@ -1898,9 +1907,9 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: '_2117',
                             rect: ['0px', '0px', '520px', '520px', 'auto', 'auto'],
+                            id: '_2117',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/2117.jpg', '0px', '0px']
                         }
                     ],
@@ -1928,9 +1937,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '39px', '20px', 'auto', 'auto'],
-                            id: 'pc78oagLi',
                             type: 'image',
+                            id: 'pc78oagLi',
+                            rect: ['0px', '0px', '39px', '20px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/pc78oagLi.png', '0px', '0px']
                         }
                     ],
@@ -1958,9 +1967,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '322px', '153px', 'auto', 'auto'],
-                            id: 'cartoon-tent-clipart-1jpg',
                             type: 'image',
+                            id: 'cartoon-tent-clipart-1jpg',
+                            rect: ['0px', '0px', '322px', '153px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cartoon-tent-clipart-1.jpg.png', '0px', '0px']
                         }
                     ],
@@ -1988,9 +1997,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '114px', '79px', 'auto', 'auto'],
-                            id: '_8cEjrenRi',
                             type: 'image',
+                            id: '_8cEjrenRi',
+                            rect: ['0px', '0px', '114px', '79px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/8cEjrenRi.png', '0px', '0px']
                         }
                     ],
@@ -2018,9 +2027,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '92px', '79px', 'auto', 'auto'],
-                            id: 'scroll-simple-map-cartoon-template-compass-road',
                             type: 'image',
+                            id: 'scroll-simple-map-cartoon-template-compass-road',
+                            rect: ['0px', '0px', '92px', '79px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/scroll-simple-map-cartoon-template-compass-road.png', '0px', '0px']
                         }
                     ],
@@ -2073,45 +2082,45 @@
                 content: {
                     dom: [
                         {
-                            rect: ['140px', '6px', '101px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud4',
-                            type: 'image',
+                            rect: ['140px', '6px', '101px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud4.png', '0px', '0px']
                         },
                         {
-                            rect: ['400px', '-44px', '101px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud4Copy',
-                            type: 'image',
+                            rect: ['400px', '-44px', '101px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud4.png', '0px', '0px']
                         },
                         {
-                            rect: ['180px', '-14px', '114px', '68px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud2',
-                            type: 'image',
+                            rect: ['180px', '-14px', '114px', '68px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
                         },
                         {
-                            rect: ['44px', '-41px', '114px', '68px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud2Copy',
-                            type: 'image',
+                            rect: ['44px', '-41px', '114px', '68px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
                         },
                         {
-                            rect: ['331px', '-16px', '114px', '68px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud2Copy3',
-                            type: 'image',
+                            rect: ['331px', '-16px', '114px', '68px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
                         },
                         {
-                            rect: ['315px', '0px', '114px', '68px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'cloud2Copy4',
-                            type: 'image',
+                            rect: ['315px', '0px', '114px', '68px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
                         },
                         {
-                            rect: ['291px', '-14px', '114px', '68px', 'auto', 'auto'],
-                            id: 'cloud2Copy5',
                             type: 'image',
+                            id: 'cloud2Copy5',
+                            rect: ['291px', '-14px', '114px', '68px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cloud2.png', '0px', '0px']
                         }
                     ],
@@ -2226,24 +2235,24 @@
                             '331px'
                         ],
                         [
-                            "eid225",
+                            "eid243",
                             "top",
                             0,
                             10000,
                             "easeInOutSine",
-                            "${cloud2Copy}",
-                            '-41px',
-                            '19px'
+                            "${cloud2Copy3}",
+                            '14px',
+                            '-16px'
                         ],
                         [
-                            "eid226",
+                            "eid244",
                             "top",
                             10000,
                             10000,
                             "easeInOutSine",
-                            "${cloud2Copy}",
-                            '19px',
-                            '-41px'
+                            "${cloud2Copy3}",
+                            '-16px',
+                            '14px'
                         ],
                         [
                             "eid209",
@@ -2306,24 +2315,24 @@
                             '44px'
                         ],
                         [
-                            "eid243",
+                            "eid225",
                             "top",
                             0,
                             10000,
                             "easeInOutSine",
-                            "${cloud2Copy3}",
-                            '14px',
-                            '-16px'
+                            "${cloud2Copy}",
+                            '-41px',
+                            '19px'
                         ],
                         [
-                            "eid244",
+                            "eid226",
                             "top",
                             10000,
                             10000,
                             "easeInOutSine",
-                            "${cloud2Copy3}",
-                            '-16px',
-                            '14px'
+                            "${cloud2Copy}",
+                            '19px',
+                            '-41px'
                         ]
                     ]
                 }
@@ -2340,37 +2349,36 @@
                         {
                             rect: ['0px', '0px', '322px', '79px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            stroke: [1, 'rgba(0,0,0,1)', 'solid'],
-                            id: 'RoundRect',
                             opacity: '1',
+                            id: 'RoundRect',
+                            stroke: [1, 'rgba(0,0,0,1)', 'solid'],
                             type: 'rect',
                             fill: ['rgba(116,192,191,1)', [103, [['rgba(81,44,139,1.00)', 69], ['rgba(100,66,151,1.00)', 81], ['rgba(128,102,170,1.00)', 90], ['rgba(255,255,255,1.00)', 100]]]]
                         },
                         {
-                            textStyle: ['', '', '', '', 'none'],
-                            rect: ['9px', '2px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [26, 'px'], 'rgba(45,39,139,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             align: 'left',
-                            id: 'Text4',
-                            opacity: '1',
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['Arial, Helvetica, sans-serif', [26, 'px'], 'rgba(45,39,139,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                             text: '<p style=\"margin: 0px;\">​We take care of everything</p>',
-                            type: 'text'
+                            rect: ['9px', '2px', 'auto', 'auto', 'auto', 'auto'],
+                            opacity: '1',
+                            id: 'Text4'
                         },
                         {
-                            textStyle: ['', '', '', '', 'none'],
-                            rect: ['78px', '33px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [38, 'px'], 'rgba(233,64,64,1)', '400', 'none', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             align: 'left',
-                            id: 'Text3',
-                            opacity: '1',
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['Arial, Helvetica, sans-serif', [38, 'px'], 'rgba(233,64,64,1)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                             text: '<p style=\"margin: 0px;\">​Book now</p>',
-                            type: 'text'
+                            rect: ['78px', '33px', 'auto', 'auto', 'auto', 'auto'],
+                            opacity: '1',
+                            id: 'Text3'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '322px', '79px']
+                            rect: [null, null, '322px', '79px']
                         }
                     }
                 },
